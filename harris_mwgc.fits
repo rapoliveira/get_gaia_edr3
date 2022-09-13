@@ -1,0 +1,413 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                 5274 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.3"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.3-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2020-07-08T15:39:03
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="/Users/rapoliveira/PhD/Sergio-Bica-2020/Harris.txt" nrows="157">
+<FIELD arraysize="9" datatype="char" name="ID">
+<DESCRIPTION>Cluster identification number</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="Name">
+<DESCRIPTION>Other commonly used cluster name</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="RA" unit="hms">
+<DESCRIPTION>Right ascension (epoch J2000)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="DEC" unit="dms">
+<DESCRIPTION>Declination (epoch J2000)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="l" unit="deg">
+<DESCRIPTION>Galactic longitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="b" unit="deg">
+<DESCRIPTION>Galactic latitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Rsun" unit="kpc">
+<DESCRIPTION>Distance from Sun</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Rgc" unit="kpc">
+<DESCRIPTION>Distance from Galactic center (assuming R0 = 8 kpc)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="X" unit="kpc">
+<DESCRIPTION>Galactic distance in X component (pointing toward the Galactic center)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Y" unit="kpc">
+<DESCRIPTION>Galactic distance in Y component (pointing in the direction of Galactic rotation)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Z" unit="kpc">
+<DESCRIPTION>Galactic distance in Z component (pointing toward North Galactic Pole)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="FeH" unit="[Sun]">
+<DESCRIPTION>Metallicity [Fe/H] in log (base 10) scale</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="wt">
+<DESCRIPTION>Weight of mean metallicity; essentially the number of independent [Fe/H] measurements averaged together (see bibliography for full description)</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="E(B-V)" unit="mag">
+<DESCRIPTION>Foreground reddening</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="V_HB" unit="mag">
+<DESCRIPTION>V magnitude level of the horizontal branch (or RR Lyrae)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="mM_V" unit="mag">
+<DESCRIPTION>Apparent visual distance modulus (m-M)V</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="V_t" unit="mag">
+<DESCRIPTION>Integrated V magnitude of the cluster</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="M_V,t" unit="mag">
+<DESCRIPTION>Absolute visual magnitude (cluster luminosity); M_V,t = V_t - (m-M)V</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="U-B" unit="mag">
+<DESCRIPTION>Integrated color index (U-B)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="B-V" unit="mag">
+<DESCRIPTION>Integrated color index (B-V)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="V-R" unit="mag">
+<DESCRIPTION>Integrated color index (V-R)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="V-I" unit="mag">
+<DESCRIPTION>Integrated color index (V-I)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="4" datatype="char" name="spt">
+<DESCRIPTION>Spectral type of the integrated cluster light</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ellip">
+<DESCRIPTION>Projected ellipticity of isophotes; e = 1-(b/a)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="v_r" unit="km/s">
+<DESCRIPTION>Heliocentric radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="vr_unc" unit="km/s">
+<DESCRIPTION>Observational (internal) uncertainty in radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="v_LSR" unit="km/s">
+<DESCRIPTION>Radial velocity relative to Solar neighborhood LSR</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="sig_v" unit="km/s">
+<DESCRIPTION>Central velocity dispersion sig_v</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="vd_unc" unit="km/s">
+<DESCRIPTION>Observational (internal) uncertainty in velocity dispersion</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="c">
+<DESCRIPTION>King-model central concentration; c = log(r_t/r_c)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="2" datatype="char" name="cs">
+<DESCRIPTION>Core collapse: a 'c' denotes a core-collapsed cluster</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="r_c" unit="arcmin">
+<DESCRIPTION>Core radius in arcmin</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="r_h" unit="arcmin">
+<DESCRIPTION>Half-light radius in arcmin</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="mu_V" unit="mag/arcsec2">
+<DESCRIPTION>Central surface brightness, V magnitudes per square arcsecond</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rho_0" unit="log10(Lo/Mpc3)">
+<DESCRIPTION>Central luminosity density; log_10(Solar luminosities per cubic parsec)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="lg(tc)" unit="log10(yr)">
+<DESCRIPTION>Core relaxation time t(r_c), in log_10(years)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="lg(th)" unit="log10(yr)">
+<DESCRIPTION>Median relaxation time t(r_h), in log_10(years)</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                  170 / width of table in bytes                        NAXIS2  =                  157 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                   37 / number of columns                              EXTNAME = '/Users/rapoliveira/PhD/Sergio-Bica-2020/Harris.txt' / table name     TTYPE1  = 'ID      '           / label for column 1                             TFORM1  = '9A      '           / format for column 1                            TCOMM1  = 'Cluster identification number'                                       TTYPE2  = 'Name    '           / label for column 2                             TFORM2  = '11A     '           / format for column 2                            TCOMM2  = 'Other commonly used cluster name'                                    TTYPE3  = 'RA      '           / label for column 3                             TFORM3  = '11A     '           / format for column 3                            TUNIT3  = 'hms     '           / units for column 3                             TCOMM3  = 'Right ascension (epoch J2000)'                                       TTYPE4  = 'DEC     '           / label for column 4                             TFORM4  = '11A     '           / format for column 4                            TUNIT4  = 'dms     '           / units for column 4                             TCOMM4  = 'Declination (epoch J2000)'                                           TTYPE5  = 'l       '           / label for column 5                             TFORM5  = 'E       '           / format for column 5                            TUNIT5  = 'deg     '           / units for column 5                             TCOMM5  = 'Galactic longitude'                                                  TTYPE6  = 'b       '           / label for column 6                             TFORM6  = 'E       '           / format for column 6                            TUNIT6  = 'deg     '           / units for column 6                             TCOMM6  = 'Galactic latitude'                                                   TTYPE7  = 'Rsun    '           / label for column 7                             TFORM7  = 'E       '           / format for column 7                            TUNIT7  = 'kpc     '           / units for column 7                             TCOMM7  = 'Distance from Sun'                                                   TTYPE8  = 'Rgc     '           / label for column 8                             TFORM8  = 'E       '           / format for column 8                            TUNIT8  = 'kpc     '           / units for column 8                             TCOMM8  = 'Distance from Galactic center (assuming R0 = 8 kpc)'                 TTYPE9  = 'X       '           / label for column 9                             TFORM9  = 'E       '           / format for column 9                            TUNIT9  = 'kpc     '           / units for column 9                             TTYPE10 = 'Y       '           / label for column 10                            TFORM10 = 'E       '           / format for column 10                           TUNIT10 = 'kpc     '           / units for column 10                            TTYPE11 = 'Z       '           / label for column 11                            TFORM11 = 'E       '           / format for column 11                           TUNIT11 = 'kpc     '           / units for column 11                            TTYPE12 = 'FeH     '           / label for column 12                            TFORM12 = 'E       '           / format for column 12                           TUNIT12 = '[Sun]   '           / units for column 12                            TCOMM12 = 'Metallicity [Fe/H] in log (base 10) scale'                           TTYPE13 = 'wt      '           / label for column 13                            TFORM13 = 'I       '           / format for column 13                           TNULL13 =               -32768 / blank value for column 13                      TTYPE14 = 'E(B-V)  '           / label for column 14                            TFORM14 = 'E       '           / format for column 14                           TUNIT14 = 'mag     '           / units for column 14                            TCOMM14 = 'Foreground reddening'                                                TTYPE15 = 'V_HB    '           / label for column 15                            TFORM15 = 'E       '           / format for column 15                           TUNIT15 = 'mag     '           / units for column 15                            TCOMM15 = 'V magnitude level of the horizontal branch (or RR Lyrae)'            TTYPE16 = 'mM_V    '           / label for column 16                            TFORM16 = 'E       '           / format for column 16                           TUNIT16 = 'mag     '           / units for column 16                            TCOMM16 = 'Apparent visual distance modulus (m-M)V'                             TTYPE17 = 'V_t     '           / label for column 17                            TFORM17 = 'E       '           / format for column 17                           TUNIT17 = 'mag     '           / units for column 17                            TCOMM17 = 'Integrated V magnitude of the cluster'                               TTYPE18 = 'M_V,t   '           / label for column 18                            TFORM18 = 'E       '           / format for column 18                           TUNIT18 = 'mag     '           / units for column 18                            TCOMM18 = 'Absolute visual magnitude (cluster luminosity); M_V,t = V_t - (m-M)V'TTYPE19 = 'U-B     '           / label for column 19                            TFORM19 = 'E       '           / format for column 19                           TUNIT19 = 'mag     '           / units for column 19                            TCOMM19 = 'Integrated color index (U-B)'                                        TTYPE20 = 'B-V     '           / label for column 20                            TFORM20 = 'E       '           / format for column 20                           TUNIT20 = 'mag     '           / units for column 20                            TCOMM20 = 'Integrated color index (B-V)'                                        TTYPE21 = 'V-R     '           / label for column 21                            TFORM21 = 'E       '           / format for column 21                           TUNIT21 = 'mag     '           / units for column 21                            TCOMM21 = 'Integrated color index (V-R)'                                        TTYPE22 = 'V-I     '           / label for column 22                            TFORM22 = 'E       '           / format for column 22                           TUNIT22 = 'mag     '           / units for column 22                            TCOMM22 = 'Integrated color index (V-I)'                                        TTYPE23 = 'spt     '           / label for column 23                            TFORM23 = '4A      '           / format for column 23                           TCOMM23 = 'Spectral type of the integrated cluster light'                       TTYPE24 = 'ellip   '           / label for column 24                            TFORM24 = 'E       '           / format for column 24                           TCOMM24 = 'Projected ellipticity of isophotes; e = 1-(b/a)'                     TTYPE25 = 'v_r     '           / label for column 25                            TFORM25 = 'E       '           / format for column 25                           TUNIT25 = 'km/s    '           / units for column 25                            TCOMM25 = 'Heliocentric radial velocity'                                        TTYPE26 = 'vr_unc  '           / label for column 26                            TFORM26 = 'E       '           / format for column 26                           TUNIT26 = 'km/s    '           / units for column 26                            TCOMM26 = 'Observational (internal) uncertainty in radial velocity'             TTYPE27 = 'v_LSR   '           / label for column 27                            TFORM27 = 'E       '           / format for column 27                           TUNIT27 = 'km/s    '           / units for column 27                            TCOMM27 = 'Radial velocity relative to Solar neighborhood LSR'                  TTYPE28 = 'sig_v   '           / label for column 28                            TFORM28 = 'E       '           / format for column 28                           TUNIT28 = 'km/s    '           / units for column 28                            TCOMM28 = 'Central velocity dispersion sig_v'                                   TTYPE29 = 'vd_unc  '           / label for column 29                            TFORM29 = 'E       '           / format for column 29                           TUNIT29 = 'km/s    '           / units for column 29                            TCOMM29 = 'Observational (internal) uncertainty in velocity dispersion'         TTYPE30 = 'c       '           / label for column 30                            TFORM30 = 'E       '           / format for column 30                           TCOMM30 = 'King-model central concentration; c = log(r_t/r_c)'                  TTYPE31 = 'cs      '           / label for column 31                            TFORM31 = '2A      '           / format for column 31                           TCOMM31 = 'Core collapse: a ''c'' denotes a core-collapsed cluster'             TTYPE32 = 'r_c     '           / label for column 32                            TFORM32 = 'E       '           / format for column 32                           TUNIT32 = 'arcmin  '           / units for column 32                            TCOMM32 = 'Core radius in arcmin'                                               TTYPE33 = 'r_h     '           / label for column 33                            TFORM33 = 'E       '           / format for column 33                           TUNIT33 = 'arcmin  '           / units for column 33                            TCOMM33 = 'Half-light radius in arcmin'                                         TTYPE34 = 'mu_V    '           / label for column 34                            TFORM34 = 'E       '           / format for column 34                           TUNIT34 = 'mag/arcsec2'        / units for column 34                            TCOMM34 = 'Central surface brightness, V magnitudes per square arcsecond'       TTYPE35 = 'rho_0   '           / label for column 35                            TFORM35 = 'E       '           / format for column 35                           TUNIT35 = 'log10(Lo/Mpc3)'     / units for column 35                            TTYPE36 = 'lg(tc)  '           / label for column 36                            TFORM36 = 'E       '           / format for column 36                           TUNIT36 = 'log10(yr)'          / units for column 36                            TCOMM36 = 'Core relaxation time t(r_c), in log_10(years)'                       TTYPE37 = 'lg(th)  '           / label for column 37                            TFORM37 = 'E       '           / format for column 37                           TUNIT37 = 'log10(yr)'          / units for column 37                            TCOMM37 = 'Median relaxation time t(r_h), in log_10(years)'                     DATE-HDU= '2020-07-08T15:39:03' / Date of HDU creation (UTC)                    STILVERS= '3.3-3   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             NGC104   47Tuc      00:24:05.67-72:04:52.6C˜ñìÂ3\@  @ìÌÍ?ó33À&ffÀFff¿8Qì 
+=#×
+A`õÃAUë…@|ÌÍÁ¸R>½p¤?aG®?®?‘ë…G4  =¸QìÁ  =ÌÌÍÁÕ™šA0  >™™š@zá  >¸Qì@JáHAf{@œ(ö@úáHAÌÍNGC288              00:52:45.24-26:34:57.4CLÍÂ²ÂAffA@  ½ÌÌÍ    Áff¿¨õÃ <õÂAw
+=Amp¤Ap¤ÀØ  =£×
+?&ff>æff?p£×    À  Â5™š>LÌÍÂO™š@9™š>™™š?}p¤  ?¬ÌÍ@¸RA ff?ã×
+A×
+A¸NGC362              01:03:14.26-70:50:55.6C–Ã×Â9  A	™šAff@FffÀ£33ÀÆff¿¡G® =LÌÍAw
+=AmG®@ÌÌÍÁáH>#×
+?E¸>úáH?G®F9  <#×
+C_€ ?   CV  @ÌÌÍ>™™š?áG®c:>8Qì?Që…AlÌÍ@—®@øQìAáHWhiting1            02:02:57   -03:15:10  C!8RÂs
+=AğÌÍB
+  Á^ff@–ffÁÒff¿333 <õÂA‘p¤A‹ë…ApzáÀp¤À  À  À  À      À  Ã™š?æffÃ
+šÀ  À  ?ÌÍ  >€  >aG®À  À  À  @ıÂNGC1261             03:12:16.21-55:12:58.4C‡EÂPzáA‚ffAÌÍ=ÌÌÍÁ   ÁNff¿¢\ <#×
+A…™šA€¸RA£×Àù™š>¸?8Qì>æff?n{F7  =\)Bˆff@“33B[™šÀ  À  ?”zá  >³33?.{A×
+@?\)A	p¤Aë…Pal1                03:33:20.04+79:34:51.8C\A˜=qA1™šA‰™šÀÙ™šA™š@fff¿&ff >™šAƒ33A{33ARáHÀ!G®À  ?uÂÀ  À      >aG®Â¥™š@S33Â˜ffÀ  À  @$zá  <#×
+>ë…A§p¤@`£×@ë…@øQìAM1      E1         03:55:02.3 -49:36:55  C+…ÂAáHBö™šBù33Á„  Â 33Â¸™š¿Ù™š     A¨  A£™šA{…À—\)À  ?8QìÀ  À      À  Bè  A   BÊ™šÀ  À  ?®{  >.{>Ñë…A¼õÃ<õÂA\)AÂEridanus            04:24:44.5 -21:11:13  CZšÂ%QìB´33B¾  ÂTÌÍÂ&ÌÍÂn  ¿·
+= <£×
+A£\)A£×Ak33À¤(öÀ  ?J=qÀ  À      À  Á¼ÌÍ@ffÂffÀ  À  ?ŒÌÍ  >€  >ë…A¶zá>Â\AáHA£×Pal2                04:46:05.91+31:22:53.4C*‡®Á¸AÙ™šB  ÁÓ33@ŒÌÍÀ‰™š¿µÂ ?¸RA¬ÌÍA¨{AP£×Àÿ
+=?ê=q@¸À  @)™š    =LÌÍÃ  Bd  ÃšÀ  À  ?Ã×
+  >.{?   A˜zá@ë…A¸AzáNGC1851             05:14:06.76-40:02:47.6Ct‚Â¸AA™šA„ÌÍÀ†ffÁffÀÜÌÍ¿—
+= 	<£×
+A€¸RAw…@äzáÁG®>.{?B\>úáH?G®F7  =LÌÍC @ ?™šC—æfA&ff?   ?î{  =¸Qì?\Ad  @¢áH@íÂA¸NGC1904  M79        05:24:11.09-24:31:29.0Cc:áÁêÌÍANffA–ffÀöffÁÌÍÀÉ™š¿ÌÌÍ <#×
+A33Ayp¤@÷\)Àû…=uÂ?&ff>áG®?hõÃF5  <#×
+CMÌÍ>ÌÌÍC=  @©™š>ÌÌÍ?Ù™šc:>#×
+?&ffA€(ö@‚\@ú\A33NGC2298             06:48:59.41-36:00:19.1Cu¡HÁ€  A,ÌÍA|ÌÍÀ‰™šÁffÀ@  ¿õÂ >\)A€áHAy™šA£×ÀÉë…>.{?@  ?
+=q?{F5  =£×
+Cæf?™™šC  À  À  ?°£×  >¸R?záHA—33@9™š@ı¸Ap¤NGC2419             07:38:08.47+38:52:56.8C4^¸AÉë…B¥33B³ÌÍÂ•ff¿   BÌÍÀ	™š =£×
+A¢záA£×A&\Á¸R=\)?(õÃÀ  ?†ffF5  <õÂÁ¡™š?   ÁÉ™š@€  ?™š?¯\)  >£×
+?c×
+A\)?Ï\)Aë…A*{Ko2                 07:58:17.0 +26:15:18  CC¸AÌQìB
+ÌÍB'™šÁñ™šÁ33Ap  À    =£×
+A”ÌÍA™šAŒÌÍ¾³33À  À  À  À      À  À  À  À  À  À  ?     >€  >W
+=À  À  À  @öffPyxis               09:07:57.8 -37:13:17  C‚¨ö@à  B™šB%™šÀ¼ÌÍÂÌÍ@™™š¿™™š >W
+=Aš  A•
+=ANffÀ·\)À  À  À  À      À  B	33?ó33A¥™šÀ  À  À    À  À  À  À  À  À  NGC2808             09:12:03.10-64:51:48.6CRÁ4  A™šA1™š@   Á33¿ó33¿‘ë… >aG®AÂAyp¤@ÆffÁ=q>\)?k…?ë…?—
+=F7  =õÂBË33?333B²ffAVff?™™š?Ç®  >€  ?LÌÍAqG®@•¸A×
+AffE3                  09:20:57.07-77:16:54.8C’"Á˜(öA™šA™š@9™šÀã33À&ff¿Tzá >™™šA33Aw…A5™šÀƒ×
+À  À  À  À      À  À  À  À  À  À  ?@    ?ï\)@ffA¸ÌÍ?W
+=AáHAÌÍPal3                10:05:31.9 +00:04:18  Cp&fB'p¤B¹  B¿ffÂ	33ÂnÌÍBvÌÍ¿Ğ£× =#×
+A¤{AŸ™šAd(öÀ¶{À  À  À  À      À  B¦ÌÍAffB—ÌÍÀ  À  ?}p¤  >Ñë…?&ffAº{<#×
+AffA{NGC3201             10:17:36.82-46:24:44.9CŠqA
+=q@œÌÍAÌÍ?™šÀ™™š?333¿Ë… >uÂAl(öAc33@Ø  Àîff>Â\?uÂ?¸R?p¤F6  =õÂC÷  >LÌÍCñs3@   >LÌÍ?¥¸  ?¦ff@FffA˜  @-p¤A	ÂAQìPal4                11:29:16.80+28:58:24.9CJO\B™šBÙffBŞffÁû33ÁNffBÎff¿´zá <#×
+A¦ffA¡®Ac33ÀÀQìÀ  À  À  À      À  B•  @ffB™33À  À  ?n{  >¨õÃ?\A¸{=áG®A…A¸RKo1                 11:59:18.5 +12:15:36  C‚~¸B€ BA33BE33À   Á{33B6ffÀ    <#×
+A˜ÌÍA“™šAˆÌÍ¿¬ÌÍÀ  À  À  À      À  À  À  À  À  À  ?     >¨õÃ>…¸À  À  À  A	ë…NGC4147             12:10:06.30+18:32:33.5C|ÙšBšaHAšffA«33¿¦ffÀƒ33A–ff¿æff <£×
+Aˆ(öAƒë…A%¸ÀÅp¤=áG®?
+=>×
+=?J=qF2/3=£×
+C733?333C:š@&ff?333?ê=q  =¸Qì>õÂA‹
+=@hQì@í¸A×
+NGC4372             12:25:45.40-72:39:32.4C–~¸Á{@¹™š@ã33@9™šÀœÌÍ¿€  À
+áH >Ç®Ax  Apzá@ç®ÀùG®>¸R?ŒÌÍ?8Qì?À  F5  >™šB™š?™™šB€ffÀ  À  ?¦ff  ?à  @z=qA¤£×@×
+A{Ap¤Rup106              12:38:40.2 -51:09:01  C–p¤A:¸RA©™šA”  A+33Áff@‰™š¿×
+= >LÌÍAffAŠ  A.ffÀË33À  À  À  À      À  Â0  @@  ÂFÌÍÀ  À  ?333  ?€  ?†ffA®\?ŒÌÍA\Ap¤NGC4590  M68        12:39:27.98-26:44:38.6C•Ğ¤B33A$ÌÍA#33@ƒ33Àæff@À  À¸R =LÌÍAzáHAs\)@úáHÀë×
+=#×
+?!G®>ë…?p£×F2/3=LÌÍÂ½ff>LÌÍÂÁ™š@   >ÌÌÍ?´zá  ?zá?ÁG®A–zá@$záA33AQìNGC4833             12:59:33.92-70:52:35.4C—ÌÍÁ Qì@Ó33@à  @fffÀ¬ÌÍ¿fff¿ìÌÍ >£×
+Ay™šAqG®@İ¸Á¸R>”zá?n{?!G®?ª=qF3  =\)CH33?™™šC@æfÀ  À  ?     ?€  @=qA“×
+@@  AzáA¸RNGC5024  M53        13:12:55.25+18:10:05.4C¦záBŸ…A33A“33@333¿³33AŒÌÍÀff <£×
+A†záA‚\@ó…Á\)=¸Qì?#×
+>æff?\(öF6  <#×
+Â{™š>™™šÂ`ÌÍ@ŒÌÍ?fff?Ü(ö  >³33?§®A‹
+=@DzáA®A(öNGC5053             13:16:27.09+17:42:00.9C§ÙšBæfA‹33Aff@@  ¿³33AˆÌÍÀG® <#×
+A……A×
+A…ÀØQì<õÂ?&ffÀ  ?fff    >W
+=B0  >ÌÌÍBK™š?³33>LÌÍ?=p¤  @¸@'
+=A°=q?
+=qAõÃAë…NGC5139  omegaCen   13:26:47.24-47:28:46.5CšŒÍAo…@¦ff@ÌÌÍ@FffÀy™š?¦ff¿Ã×
+ =õÂAh(öA_
+=@k…Á$(ö>B\?G®?\?†ffF5  >.{Chš=ÌÌÍCdæfA†ff>™™š?§®  @®@   A†zá@I™šA™šA!p¤NGC5272  M3         13:42:11.62+28:22:38.2B(áHBk…A#33A@  ?À  ?¦ffA   ¿À   <#×
+Az=qAq¸@Æ{Á{=¸Qì?0£×À  ?n{F6  =#×
+Ã™š>LÌÍÃ
+LÍ@°  >™™š?ñë…  >½p¤@×
+A…¸@dzáAõÃA£×NGC5286             13:46:26.81-51:22:27.3C›ÎA)¸A;33Aff@ó33Á	™š@ff¿ØQì >uÂA…
+=A€£×@êáHÁ×
+>\)?aG®?zá?˜QìF5  =õÂBe™š?À  BY33A™š?€  ?´zá  >\)?:áHAÂ@ƒ33AffAÂAM4                 13:56:21.7 -27:10:03  C #×B
+=B ÌÍAŞffA¥™šÁ‰™šAff¿¦ff =LÌÍA’ffA…A~{¿ç®À  À  À  À      À  À  À  À  À  À  ?333  >Ñë…>Ü(öAÆ  ½LÌÍA¸RA¸NGC5466             14:05:27.29+28:32:04.0B(™šB“.A€  A‚ff@S33@@  AtÌÍ¿ıp¤     A„(öA€(öA£×Àß\)À  ?+…À  ?Që…    =áG®Bİff>LÌÍBòff?Ù™š>LÌÍ?…¸  ?·
+=@33A¬áH?W
+=A™šA(öNGC5634             14:29:37.23-05:58:35.1C«áBE
+=AÉ™šA©™šA{33À   A˜ÌÍ¿ğ£× =LÌÍAp¤A‰G®A…Àö{=¸Qì?+…>áG®?uÂF3/4<£×
+Â4ff@Ó33Â  À  À  @zá  =¸Qì?\(öA‰™š@hQì@õp¤A£×NGC5694             14:39:36.29-26:32:20.2C¥‡®AòáHB  Aë33AÓ33Ái™šA™š¿ıp¤ =¸QìA”  A  A"¸RÀú\=£×
+?0£×>õÂ?záHF4  =#×
+ÃLÍ?LÌÍÃ33@¹™š?LÌÍ?ñë…  =uÂ>ÌÌÍA„{@|ÌÍ@û33AQìIC4499              15:00:18.45-82:12:49.3C™¬ÍÁ£ÂA–ffA{33A+33Á`  ÀÓ33¿Ã×
+ >k…A33Aˆ£×A(öÀê=q>æff?hõÃÀ  À      =£×
+Aü  >LÌÍAÀÌÍ@   ?   ?šáH  ?W
+=?ÚáHA§33?ÆffA\)A®NGC5824             15:03:58.63-33:04:05.6C¦G®A°\B ffAÏ33AÓ33Á[33AA™š¿ôzá >¸A“™šA…Ap¤Á™š=õÂ?@  ?\?†ffF4  <õÂÁÜ  ?À  Á¾ffA9™š?   ?ıp¤  =uÂ>æffAráH@“…@ı¸A…Pal5                15:16:05.25-00:06:41.8?Y™šB7p¤A¹™šA”ÌÍA™š>LÌÍA…™š¿´zá <õÂAŒ{A‡\)A<  À¥p¤À  À  À  À      À  ÂjÌÍ>LÌÍÂ@  ?ŒÌÍ>LÌÍ?¸  @\@.¸RAÅ¸¿záAõÃA¸NGC5897             15:17:24.50-21:00:37.0C«yšAòQìAH  @ìÌÍA$ÌÍÀLÌÍ@É™š¿ó33 =¸QìA‚(öA|(öAzáÀç\)=£×
+?=p¤?   ?…¸F7  =£×
+BË  ?€  BØÌÍÀ  À  ?\(ö  ?³33@×
+A¤=q?Ã×
+AG®A¸NGC5904  M5         15:18:33.22+02:04:51.7@w
+=B;33@ğ  @Æff@£33>™™š@°  ¿¥¸ <õÂAq¸Ag\)@´ÌÍÁõÃ>.{?8Qì>æff?s33F7  >\)BTÌÍ>ÌÌÍB€™š@°  >ÌÌÍ?İp¤  >áG®?â\A€¸R@xQìAzáA\NGC5927             15:28:00.69-50:40:22.9C£LÍ@›…@öff@“33@ÌÌÍÀ†ff?333¾úáH >æffA„ffA}¸A (öÀùë…?Y™š?§®?J=q?Ğ£×G2  =#×
+Â×  ?fffÂÖffÀ  À  ?ÌÌÍ  >×
+=?ŒÌÍA‡G®@‚áHA=qA
+=NGC5946             15:35:28.52-50:39:34.8C£Ê=@†{A)™š@¹™šAffÀ³33?LÌÍ¿¥¸ ?
+=qA‹33A†QìAÂÀåÂ>æff?¥¸?E¸?Ê=qF7/8>#×
+C ff?æffC æf@€  @9™š@   c =£×
+?c×
+A‰…@•Â@ÜÌÍA\BH176               15:39:07.45-50:03:09.8C¤4{@ŠáHA—33ANffA€ÌÍÁff?³33     ?
+=qA–áHAzáA`  Àë…À  À  À  À      À  À  À  À  À  À  ?Y™š  ?fff?fffAºáH?xQìA=qA£×NGC5986             15:46:03.00-37:47:11.1C¨‚ATQìA&ff@™™šAÌÍÀ€  @™š¿Ë… >\)A„(öA\)@ğ£×Á
+=>™™š?fff?zá?œ(öF5  =uÂB±ÌÍ@lÌÍB¹ÌÍÀ  À  ?p¤  >ğ£×?záHA\)@Z=qA	G®AáHLynga7   BH184      16:11:03.65-55:19:04.0C¤bÀ333A   @‰™š@Ù™šÀƒ33¾ÌÌÍ¿+… ?:áHA‹p¤A†=qA"áHÀÓ33À  À  À  À      À  A   @   A   À  À  ?s33  ?fff?™™šÀ  À  À  AG®Pal14    AvdB       16:11:00.6 +14:57:28  Aåë…B(ÂB™  B33BFÌÍAÚffBM™š¿Ï\) =#×
+A ÌÍAœQìAk×
+À™™šÀ  À  À  À      À  B™š>LÌÍB®  >ÌÌÍ=ÌÌÍ?LÌÍ  ?Që…?œ(öAÊ  ¿xQìA™šA QìNGC6093  M80        16:17:02.41-22:58:33.9C°UÃA›®A   @s33Aff¿™™š@S33¿à   >8QìA€ÌÍAxõÃ@ê\Á®>W
+=?W
+=?\)?{F6      A™š?À  A…™šAFff?™š?×
+=  >™š?(öAqÂ@™G®@øõÃAÌÍNGC6121  M4         16:23:35.22-26:31:32.7C¯|)A…@ÌÍ@¼ÌÍ@ff¾™™š?™š¿”zá >³33AW33AM¸@´(öÀæ{>Ü(ö?ƒ×
+?0£×?µÂF8      Bff>LÌÍB33@€  >LÌÍ?Ó33  ?”zá@Š\A™š@hõÃ@üÌÍAáHNGC6101             16:25:48.12-72:12:07.9CŞ¸Á}¸AvffA333A0  Á   À†ff¿ıp¤ =LÌÍA„ÌÍA€ÌÍA\ÀŞ{=uÂ?.{?   À  F5  =LÌÍC´³3?Ù™šC²€ À  À  ?LÌÍ  ?xQì?†ffA¢Qì?Ó33A\)A…NGC6144             16:27:13.86-26:01:24.6C¯÷
+A{33Aff@,ÌÍA  ¿™™š@™š¿áG® >¸QìAƒ33A}ÂA(öÀÛ33>³33?uÂ?™š?ŒÌÍF5/6>€  CAÌÍ?™šCIæfÀ  À  ?Æff  ?p£×?Ğ£×A ff@×
+AzáA=qNGC6139             16:27:40.37-38:50:55.5C«/\@Ş{A!™š@fffA™šÀ@  ?™™š¿Ó33 ?@  A33AŠÌÍA×
+ÁÂ?:áH?³33?hõÃ?î{F6/7=LÌÍ@Öff@À  A8  À  À  ?î{  >™š?Y™šA‰™š@•p¤@õ¸AÌÍTerzan3             16:28:40.08-35:21:12.5C¬Š=A
+=A33@   @ù™šÀff?¦ff¿=p¤ ?:áHAŒ{A†\A@  Àš=qÀ  À  À  À      À  ÃLÍ?333Ã™šÀ  À  ?333  ?—
+=?   A´(ö?èõÃA£×A	¸NGC6171  M107       16:32:31.86-13:03:13.6@W®A¸{@ÌÌÍ@S33@¼ÌÍ>™™š@   ¿‚\ >¨õÃA{33ApÌÍ@ıÂÀã×
+?0£×?ŒÌÍ?8Qì?¹™šG0  <£×
+Âff>™™šÁ¸  @ƒ33>™™š?Ã×
+  ?\)?İp¤A—…@E¸A õÃA  1636-283 ESO452-SC1116:39:25.45-28:23:55.3C¯ô{AA™šAÌÍ@ffA   ¿ŒÌÍ?Ù™š¿À   >ë…A„ÌÍA€(öA@  À€£×À  À  À  À      À  À  À  À  À  À  ?€    ?   ?   A¦  @   A¸@û×
+NGC6205  M13        16:41:41.24+36:27:35.5Bl
+=B#£×@ã33Aff@333@“33@–ff¿Ã×
+ <£×
+AnffAeG®@¸õÃÁÌÍ¼£×
+?.{À  ?\(öF6  =áG®Ãt33>LÌÍÃd  @ã33>ÌÌÍ?Ã×
+  ?¸R?ØQìA„¸R@c33A(öAÌÍNGC6229             16:46:58.79+47:31:39.9B“G®B!=qAô  Aîff@Ğ  A²ffA™š¿¼(ö <#×
+A=qA‹™šA=qÁ õÃ¼õÂ?333À  ?G®F7  =LÌÍÃ33@ó33Ã
+ffÀ  À  ?À    =õÂ>¸QìA†(ö@b\AÌÍAffNGC6218  M12        16:47:14.18-01:56:54.7A{…AÒzá@™™š@  @†ff?™™š@ff¿¯\) >B\Ai™šA`(ö@ÖffÀéë…>LÌÍ?Tzá?\)?‘ë…F8  =#×
+Â%™š>LÌÍÁß33@  >ÌÌÍ?«…  ?J=q?â\AÌÍ@N¸RA
+=Aë…FSR1735             16:52:10.6 -47:03:29  C©˜R¿ìÌÍAÌÍ@lÌÍA™šÀ`  ¾™™šÀ    ?µÂA   AšÌÍANffÀÎffÀ  À  À  À      À  À  À  À  À  À  ?\)  >Ç®>®{À  À  À  AÂNGC6235             16:53:25.31-22:10:38.8C³uÃAXQìA8  @†ffA333¾LÌÍ@,ÌÍ¿£×
+ >¸RA†õÃA‚{A…ÀÉG®>áG®?†ff?(õÃ?®{F9  >¸B®™š@Y™šBÁ™šÀ  À  ?Ã×
+  >¨õÃ?€  A˜õÃ@>{AG®A=qNGC6254  M10        16:57:09.05-04:06:01.1Ar=qA¸£×@ŒÌÍ@“33@y™š?ŒÌÍ?Ù™š¿Ç® >\)AjffAaG®@Ó33Àï\)>k…?fff?®?šáHF3      B–ff?333B±  @Ó33?LÌÍ?°£×  ?E¸?ù™šA™š@b\A\)AffNGC6256             16:59:32.62-37:07:17.0C­å@S×
+A$ÌÍ@@  A   ÀÌÍ?™š¿‚\ ?‹…A˜¸RA“…A4£×ÀäÌÍ?ƒ×
+?ØQìÀ  À      À  ÂÊÌÍ?ó33Â¿33@Ó33@&ff@   c <£×
+?\(öA¸@²áH@º=qAÂPal15               16:59:51.0 -00:32:20  A—
+=AÂffB4ffB™šB™šATÌÍA”ÌÍÀzá >ÌÌÍA   Aœ{A`  À°QìÀ  À  À  À      À  B‰ÌÍ?ŒÌÍB¥ÌÍÀ  À  ?™š  ?™™š?ŒÌÍAÆõÃ¾€  A×
+A…NGC6266  M62        17:01:12.80-30:06:49.4C°Èö@ê=q@Ù™š?Ù™š@Öff¿LÌÍ?fff¿—
+= >ğ£×A‚  Az{@ÎffÁáH?¸?˜Qì?=p¤?Ê=qF9  <#×
+ÂŒ33?³33Ây33AdÌÍ>ÌÌÍ?ÚáHc:>aG®?k…Aq™š@¥¸@üÌÍA®NGC6273  M19        17:02:37.80-26:16:04.7C²o\A{AÌÍ?Ù™šA33¿   ?³33¿Ş¸R >Â\Aƒ…A~ff@Ø£×Á{>³33?ƒ×
+?(õÃ?¬ÌÍF7  >Š=qC  @ƒ33CÌÍÀ  À  ?Ã×
+  >Ü(ö?¨õÃA†(ö@~¸RAQìA{NGC6284             17:04:28.51-24:45:53.5C³,ÍA
+=AtÌÍ@ğ  Ap  ¾ÌÌÍ@&ff¿¡G® >\)A‹33A†QìAG®Àş¸R>ÌÌÍ?}p¤?&ff?§®F9  <õÂAÜ  ?Ù™šBÌÍ@É™š?fff@   c =\)?(õÃA‚ÌÍ@‘™š@ç®Ap¤NGC6287             17:05:09.13-22:42:30.1>¸A0QìAff@ffA33    ?æffÀff ?™šA‰™šA…ÂA™šÀë…?¸?™™š?Tzá?Ş¸RF5  >¸ÃYš@`  Ã‹ŒÍÀ  À  ?°£×  >”zá?=p¤A’\@që…A õÃA  NGC6293             17:10:10.20-26:34:55.5C²Ï\@ú\A  ?ó33Aff¾ÌÌÍ?¦ff¿ş¸R >¸QìA„  A€  A…ÀøõÃ>”zá?uÂ?!G®?£×
+F3  <õÂÃ33?Ù™šÃ	ff@öff?¦ff@   c =LÌÍ?c×
+A{…@©ë…@Ì(öA
+=NGC6304             17:14:32.25-29:27:43.3C±ê=@¬(ö@¼ÌÍ@33@¹™š¾ÌÌÍ?™š¾æff ?
+=qA‚  AxQìA…Àé™š?Që…?§®?E¸?Ù™šG3  <£×
+ÂÖ™š@fffÂÆ™šÀ  À  ?æff  >W
+=?µÂA‰™š@®@ë…A™šNGC6316             17:16:37.30-28:08:24.4C²—
+@¸QìA&ff@&ffA&ff¿   ?€  ¾æff ?
+=qAŒ  A†(öAáHÁp¤?¸R?±ë…?Y™š?æffG2  =#×
+BÌÍAffBŸÌÍÀ  À  ?Ó33  >.{?&ffA‹…@‡\)@ö¸RA=qNGC6341  M92        17:17:07.39+43:08:09.4Bˆ®Bp¤AÌÍA™š@   @É™š@–ffÀ×
+ <£×
+Aq™šAjff@Î{Á\)<#×
+?!G®À  ?aG®F2  =ÌÌÍÂğ  =ÌÌÍÂÏ  @À  >ÌÌÍ?×
+=  >…¸?‚\Aw…@‰™š@ş¸RAQìNGC6325             17:17:59.21-23:45:57.6?xQìA   @ù™š?ŒÌÍ@öff=ÌÌÍ?ŒÌÍ¿    ?hõÃA33AŠQìA%G®ÀŞ¸R?Y™š?ÔzáÀ  @	™šG0  =õÂAîff?æffB33@¼ÌÍ?¦ff@   c <õÂ?!G®AŒzá@°£×@·\)A33NGC6333  M9         17:19:11.26-18:30:57.4@±G®A+\)@üÌÍ?Ù™š@öff?333?À  ¿â\ >Â\A™šAz¸R@÷
+=Àşff>£×
+?xQì?!G®?ª=qF5/6=#×
+Ceš@à  CoÌÍÀ  À  ?     >æff?uÂA‹¸@që…AÂAffNGC6342             17:21:10.08-19:35:14.7@œÌÍA…A  ?Ù™šAff?333?³33¿ÌÍ >ë…A†ffA€£×A\ÀÍp¤?E¸?¡G®?LÌÍ?ÈõÃG3/4>8QìBçff?³33Bü™š@¦ff@ff@   c =LÌÍ?:áHA‡Â@Ÿ
+=@Å¸A(öNGC6356             17:23:34.93-17:48:46.9@×
+=A#…Aq™š@ğ  Ak33?Ù™š@,ÌÍ¾ÌÌÍ >\)AŒ  A†{A  Á(ö?!G®?£×?0£×?¹™šG3  <õÂAØ  @‰™šB  À  À  ?Ë…  >uÂ?O\)Aˆ(ö@që…Aë…AÌÍNGC6355             17:23:58.59-26:21:12.3C³Ë…@­ÂA33?³33A33½ÌÌÍ?fff¿¯\) ?E¸AffA‰®A=qÁ¸?8Qì?½p¤?n{?ê=qG0  À  Ã0æf@ã33Ã'æfÀ  À  @   c =LÌÍ?aG®A¸@¡G®@È£×A\)NGC6352             17:25:29.11-48:25:19.8CªµÃÀåp¤@³33@S33@©™š¿æff¿333¿#×
+ >aG®Ar{AfáH@ş¸RÀÏ
+=?#×
+?‡®?(õÃ?À  G4  =\)Ã	  ?ŒÌÍÃšÀ  À  ?ŒÌÍ  ?Tzá@33A‘\)@JáHA\)A¸RIC1257              17:27:08.5 -07:05:35  A„QìArffAÈ  A33A¹™š@ÜÌÍ@Ğ  ¿Ù™š ?:áHAffAš  AQ™šÀÄÌÍÀ  ?°£×À  ?ê=q    À  Ã33@ffÂş  À  À  ?Æff  >€  ?³33À  À  À  A™šTerzan2  HP3        17:27:33.10-30:48:08.4C²(ö@33@ğ  ?LÌÍ@ğ  ¿   >™™š¿0£× ?ï\)A¦õÃA¡\)Ad£×À¼(öÀ  À  À  À      À  BÚ  Ap  BéÌÍÀ  À  @   c <õÂ?Â\A±G®@›…@®¸RA¸NGC6366             17:27:44.24-05:04:47.5A“G®A€Qì@`  @   @LÌÍ?ŒÌÍ?€  ¿
+= ?5ÂAzffAo
+=A33À·®?xQì?¸QìÀ  À      >#×
+Âôff?   ÂÙ33?¦ff?   ?=p¤  @
+áH@:áHAª  @õÃA×
+A®Terzan4  HP4        17:30:39.00-31:35:43.9C²?§®@æff?€  @æff¿   >LÌÍ¿´zá @   A¨\A£×
+A€  À\)À  À  À  À      À  ÂH  @9™šÂ)33À  À  ?fff  ?fff?ìÌÍÀ  À  À  A33HP1      BH229      17:31:05.2 -29:58:54  C²¸R@®A33?   A33¾ÌÌÍ>™™š¿€   ?\)A•™šAffA9p¤ÀÎ¸RÀ  À  À  À      À  B733?333BX  À  À  @   c <õÂ@FffAªQì@Š\@ õÃA
+=NGC6362             17:31:54.99-67:02:54.0C¢ÆfÁŒ\@ó33@£33@À  Àƒ33À33¿}p¤ =¸QìAuG®AjáH@÷\)ÀŞff>”zá?Y™š?\)?‘ë…G3  =\)ÁQ™š?™šÁy™š@333>ÌÌÍ?‹…  ?£×@33Ašzá@\AÌÍA33Liller1             17:33:24.50-33:23:20.4C±k…¾#×
+A33?LÌÍA33¿333    ¾¨õÃ @DzáAÆ¸RAÀ¸RA†(öÀê=qÀ  À  À  À      À  BP  Ap  BlÌÍÀ  À  @33  =uÂÀ  AÀ  @¨õÃ@Ó×
+    NGC6380  Ton1       17:34:28.0 -39:04:09  C¯
+ÀZáHA.ff@S33A+33¿ó33¿™š¿@   ?•ÂAœ  A–záA4õÃÀğ  À  @ £×À  À      À  Àfff@   @ffÀ  À  ?Æffc:>®{?=p¤AŸ¸@n¸RAffAÂTerzan1  HP2        17:35:47.8 -30:28:11  C²Èö?€  @Öff?¦ff@Öff¾™™š=ÌÌÍ¿ƒ×
+ ?ş¸RA§®A¢záA~ffÀ¸À  À  À  À      À  Bä  A`  Bô  À  À  @   c =#×
+@tzáAÈ¸R@vff@Ÿ®Aë…Ton2     Pismis26   17:36:10.5 -38:33:12  C¯ffÀZáHA33?³33A™š¿¦ff¿   ¿333 ?¸RA˜ÌÍA“G®AC×
+ÀÅp¤À  À  À  À      À  Ã8ff@ÌÍÃ2™šÀ  À  ?¦ff  ?
+=q?¦ffA±G®@6ffA®A¸NGC6388             17:36:17.23-44:44:07.8C¬Ç®À×®Aff@FffA™šÀ   ¿™™š¿ÌÍ >½p¤A†ÌÍA
+=@×
+=Á\?(õÃ?•Â?5Â?¼(öG2  <#×
+B 33?LÌÍB¨ffA—33?LÌÍ?à    =õÂ?¸Ag×
+@«×
+@÷
+=AffNGC6402  M14        17:37:36.10-03:14:45.3Aª\AlõÃAÌÍ@€  AÌÍ@S33@™š¿£×
+ ?™šAŠffA……@òáHÁ™š?ë…?   ?O\)?Ñë…F4  =áG®Â„33?æffÂPffÀ  À  ?}p¤  ?J=q?¦ffA“G®@W
+=AõÃA=qNGC6401             17:38:36.60-23:54:34.2@\ÌÍ@~¸RA)™š@,ÌÍA(  ?™š?333¿‚\ ?8QìA  AŠÌÍA33ÀüÌÍ?n{?Ê=q?‚\@ £×F9  >™šÂ‚  A	™šÂ]33À  À  ?ØQì  >€  ?ôzáA•™š@r\@ÿ
+=AzáNGC6397             17:40:42.09-53:40:27.6C©ÃÁ?\)@33@À  @ff¿LÌÍ¿   ÀG® >8QìAMë…AEë…@·\)ÀÔzá=õÂ?:áH>úáH?ƒ×
+F4  =\)A–ff=ÌÌÍA¢ff@  >LÌÍ@   c =LÌÍ@9™šAw…@¸Qì@{A	™šPal6                17:43:42.2 -26:13:21  @ff?ã×
+@¹™š@ÌÍ@¹™š>LÌÍ>LÌÍ¿hõÃ ?ºáHA˜  A’¸RA8ÌÍÀÙG®À  @5¸À  À      À  C5  @333C>33À  À  ?ŒÌÍ  ?(õÃ?™™šA¬{@]p¤Ap¤A
+=qNGC6426             17:44:54.65+03:10:12.5Aà¸RA×
+A¤ÌÍAfffA‹33AÌÍ@¹™šÀ	™š >¸QìA‘G®Ap¤A0(öÀÕp¤>³33?‚\À  ?£×
+G1  >™šÃ"  A¸  ÃæfÀ  À  ?Ù™š  >…¸?k…A ¸R@{AõÃAzáDjorg1              17:47:28.3 -33:03:56  C²XRÀ{A[33@¶ffAY™š¿LÌÍ¿™š¿ÁG® ?Ê=qA©33A¤£×AY™šÀß\)À  À  À  À      À  Ãµ33@fffÃ±€ À  À  ?À    ?   ?Ë…A¸ÌÍ@+…A\)    Terzan5  Terzan11   17:48:04.80-24:46:45  @uÂ?ØQì@ÜÌÍ?™™š@ÜÌÍ?   >LÌÍ¾k… @ë…A°QìAª(öA]™šÀíp¤@Qì@1G®À  À      À  Âº  @   Â§  À  À  ?Ï\)  >#×
+?8QìA¨£×@¤zá@ò=qAzáNGC6440             17:48:52.70-20:21:36.9@÷\)@s33A  ?¦ffAff?ŒÌÍ?™š¾¸Qì ?ˆõÃA•™šA™šA33Á  ?¼(ö?ü(ö?¸R@ £×G4  <#×
+Â™33@,ÌÍÂƒÌÍÀ  À  ?Ï\)  >\)>õÂAˆzá@§®@ó33A	ë…NGC6441             17:50:13.06-37:03:05.2C°Ã×À QìA9™š@y™šA8  ¿¦ff¿€  ¾ë… >ğ£×AŒ{A†=q@äÌÍÁ{?O\)?¢\?J=q?Ï\)G2  <£×
+A„  ?€  A·33A  >LÌÍ?Ş¸R  >¸?ë…Am™š@¨Qì@ıÂAp¤Terzan6  HP5        17:50:46.38-31:16:31.4C³HöÀ
+=q@Ù™š?¦ff@Ù™š¾LÌÍ¾™™š¿\) @ffA±G®A«…A]™šÀòáHÀ  À  À  À      À  Bü  Ap  CæfÀ  À  @   c =LÌÍ>áG®A¦{@º\@Î¸RA…NGC6453             17:50:51.70-34:35:57.0C±Ü)Àw®A9™š@lÌÍA8  ¿fff¿LÌÍ¿À   ?#×
+A
+=AŠffA!G®Àç
+=?.{?§®?}p¤@   F8  =¸QìÂ§ffAÌÍÂ™ffÀ  À  @   c =LÌÍ>áG®Aˆ\@ff@×\)AQìUKS1                17:54:27.2 -24:08:43  @¤(ö?B\@ù™š?333@ù™š?333=ÌÌÍ¿#×
+ @HõÃAÇ33AÁ™šAŠQìÀİ¸À  À  À  À      À  Bd  @À  B…ffÀ  À  @ff  >™šÀ  AÌ(ö@¸@èQì    NGC6496             17:59:03.68-44:15:57.4C®×Á (öA4ÌÍ@†ffA.ffÀ33À   ¾ë… >™šAƒÂA{×
+A£×Àæff>æff?záHÀ  À  G4  >#×
+Âáff@¶ffÂØÌÍÀ  À  ?333  ?s33?‚\A¡\)?ş¸RA
+=A£×Terzan9             18:01:38.8 -26:50:23  @g
+=¿ş¸R@ã33?ŒÌÍ@ã33>ÌÌÍ¾LÌÍ¿†ff ?áG®A¢ÌÍA®A€  Àmp¤À  À  À  À      À  Bl  A   Bˆ33À  À  @   c <õÂ?G®A¹®@p¤@Ÿ®A   Djorg2   ESO456-SC3818:01:49.1 -27:49:33  @1G®À   @É™š?æff@Æff>™™š¾™™š¿&ff ?p£×AŒÌÍA‡33AffÀà  À  À  À  À      À  À  À  À  À  À  ?À    >¨õÃ?†ffAœ  @vff@÷\)    NGC6517             18:01:50.52-08:57:31.6A™×
+@ØQìA)™š@†ffA   @`  ?¦ff¿p¤ ?Š=qA˜ÌÍA“×
+A#®Á  ?Y™š?à  À  @×
+F8  =uÂÂffA   ÁÔ  À  À  ?èõÃ  =uÂ?   AŒzá@©G®@İp¤A…Terzan10            18:03:36.4 -26:04:21  @®¿ş¸R@¹™š@33@¹™š?   ¾LÌÍ¿€   @™šA¯33Aª  AnffÀË33À  À  À  À      À  À  À  À  À  À  ?@    ?fff?ÆffAª=q@”záAp¤A×
+NGC6522             18:03:34.02-30:02:02.3?‚\À{…@öff?™š@öff=ÌÌÍ¿   ¿«… >õÂA„(öA~¸RAQìÀôÌÍ?&ff?šáH?B\?ÁG®F7/8=uÂÁ¨ÌÍ@Y™šÁNff@Öff?333@   c =LÌÍ?€  A|  @¯\)@Ì(öAÂNGC6535             18:03:50.51-00:17:51.5AÙp¤A'
+=@Ù™š@y™š@À  @Fff?™™š¿å¸ >®{A|  As…A'…À˜  >”zá?p£×À  À  G0  =£×
+ÃWš?   ÃHff@™š?   ?ª=q  >¸Qì?Y™šAª{@Â@èõÃA33NGC6528             18:04:49.64-30:03:22.6?‘ë…À…p¤@üÌÍ?™š@üÌÍ>LÌÍ¿™š½áG® ?
+=qA‡™šA\)A™šÀÒ=q?‹…?Ã×
+?fff?Ş¸RG3  =áG®CN™š?³33CVæfÀ  À  ?À    >¸>Â\A…×
+@˜£×@èõÃA õÃNGC6539             18:04:49.68-07:35:09.1A¦ff@ØõÃ@ù™š@@  @æff@333?fff¿!G® ?‚\A’£×AŒõÃAG®Á£×?G®?ê=qÀ  @¸RG4  =£×
+Aø  ?Ù™šB1™šÀ  À  ?Ş¸R  >Â\?Ù™šA”£×@„ÌÍAõÃA¸NGC6540  Djorg3     18:06:08.6 -27:45:55  @R\ÀS×
+@©™š@333@¦ff>™™š¾™™š¿¬ÌÍ ?(õÃA‚  AzffAÌÍÀË33À  À  À  À      À  Á™š?³33ÁÌÍÀ  À  @     <õÂÀ  Aƒ33@»33@¬ÌÍ    NGC6544             18:07:20.58-24:59:50.4@ºáHÀÌÍ@@  @£33@9™š>™™š½ÌÌÍ¿³33 ?B\AtÌÍAk\)@ø£×ÀŞ{?:áH?ºáH?záH?õÂF9  >aG®ÁÚff@y™šÁ™šÀ  À  ?Ğ£×c:=LÌÍ?šáHA‚zá@Áë…@«33A×
+NGC6541             18:08:02.36-43:42:53.6C®¥Á3
+=@ğ  @ff@é™š¿³33¿À  ¿ç® >\)Au™šAm¸@É™šÁQì>¸?B\>úáH?G®F6  =õÂÃ³3@33Ã33A33@ff?î{c:>8Qì?‡®Aw
+=@”ÌÍ@ñ™šAzá2MS-GC01 2MASS-GC01 18:08:21.81-19:49:47  A'®=áG®@fff@  @`  ?333    À    @Ù™šB
+  BffAİë…ÀÃ…À  À  À  À      À  À  À  À  À  À  ?Y™š  ?Y™š?Ó33À  À  À  AáHESO-SC06 ESO280-SC0618:09:06.0 -46:25:23  C­s3ÁI¸A«33A`  A£33À–ffÀ–ff¿æff =\)A‹33A†õÃA@  À›×
+À  À  À  À      À  À  À  À  À  À  ?fff  ?™š?†ffÀ  À  À  A™šNGC6553             18:09:17.60-25:54:31.3@¨QìÀAë…@À  @ÌÍ@¼ÌÍ?   ¾™™š¾8Qì ?!G®A„ÌÍA}G®A õÃÀø£×?«…?İp¤?G®@QìG4  >.{ÀLÌÍ?À  @Ã33À  À  ?”zá  ?®?ƒ×
+A‘\)@uÂA×
+A…2MS-GC02 2MASS-GC02 18:09:36.50-20:46:44  A£×¿(ö@œÌÍ@LÌÍ@œÌÍ?LÌÍ½ÌÌÍ¿Š=q @¥¸AğÌÍAë®AÄÌÍÀ›…À  À  À  À      À  Ãn  B  ÃcffÀ  À  ?s33  ?ÌÍ?ÌÍÀ  À  À  @÷
+=NGC6558             18:10:17.60-31:45:50.0>LÌÍÀÀ£×@ìÌÍ?€  @é™š    ¿LÌÍ¿¨õÃ >áG®A‚ffA{33A(öÀÎ{?zá?{?5Â?ºáHF7  À  ÃE33?À  Ã=ff@Fff?fff@   c <õÂ@	™šAƒ×
+@«33@¶¸RAë…IC1276   Pal7       18:10:44.20-07:12:27.4A®£×@µp¤@¬ÌÍ@lÌÍ@   @   ?   ¿@   ?Š=qA™šAˆ{A%p¤ÀÕp¤?ƒ×
+?áG®À  À      À  C³3?¦ffC)33À  À  ?ª=q  ?G®@QìA¬ÌÍ@1ë…A\)AzáTerzan12            18:12:15.8 -22:44:31  Aë…Àff@™™š@Y™š@–ff?333¾LÌÍ¿    @×
+A¤  A(öAz{À„záÀ  À  À  À      À  B¼33?À  BĞffÀ  À  ?ë…  ?Tzá?@  A¾  @Y™šA\)@øõÃNGC6569             18:13:38.80-31:49:36.8>õÂÀÕÂA.ff@FffA,ÌÍ=ÌÌÍ¿¦ff¿B\ ?®AŒ(öA†£×AÌÍÁzá?=p¤?«…?Tzá?ØQìG1      ÁàÌÍ@³33Á¢ffÀ  À  ?§®  >³33?LÌÍA‘33@hQìA{AÌÍBH261    AL3        18:14:06.6 -28:38:06  @W
+=À¨£×@Ğ  ?Ù™š@Ğ  >ÌÌÍ¿™š¿¦ff >¸QìA|ÌÍAs
+=A0  À†{À  À  À  À      <õÂÀ  À  À  À  À  ?€    >ÌÌÍ?ÌÍÀ  À  À  @ù™šGLIMPSE02           18:18:30.5 -16:58:38  Ab=q¿#×
+@°  @@  @¬ÌÍ?³33½ÌÌÍ¾¨õÃ @û33B33B33À  À  À  À  À  À      À  À  À  À  À  À  ?ª=q  ?333À  À  À  À  À  NGC6584             18:18:37.60-52:12:56.8C«ìÁƒG®AX  @à  ADÌÍÀ€  Às33¿À   =ÌÌÍA„=qA\)AQìÀö{>.{?B\?   ?…¸F6  À  C^æfAp  C`æfÀ  À  ?¼(ö  >…¸?:áHA
+=@U¸A{AQìNGC6624             18:23:40.51-30:21:39.7@2\Àı¸@üÌÍ?™™š@ù™š>ÌÌÍ¿ŒÌÍ¾áG® >\)A€¸RAuÂ@û×
+Àï®?™š?{?+…?µÂG4/5=uÂBW™š?™šBxff@¬ÌÍ?   @   c =uÂ?Që…Au¸@©™š@Ó…A\)NGC6626  M28        18:24:32.81-24:52:11.2@ù™šÀ²\@°  @,ÌÍ@¬ÌÍ?333¿   ¿¨õÃ >ÌÌÍAxÌÍAo33@ÙG®Á\>ë…?Š=q?0£×?´záF8  >#×
+Aˆ  ?€  AÔÌÍA	™š?¦ff?ÕÂ  >uÂ?ü(öA|Qì@›…@ó×
+A¸RNGC6638             18:30:56.10-25:29:50.9@üÌÍÀäÌÍAff@ÌÍAÌÍ?¦ff¿™™š¿s33 >Ñë…A†ffA¸AQìÀã×
+?\)?“33?8Qì?À  G0  <#×
+AÌÍ@y™šAÜ  À  À  ?ª=q  >aG®?\AŠff@‚áH@ú\A\)NGC6637  M69        18:31:23.10-32:20:53.1?Ü(öÁ$QìAÌÍ?Ù™šA	™š>™™š¿ÌÌÍ¿#×
+ >8QìA®Atzá@ôzáÀôzá>õÂ?G®?¸R?£×
+G2/3<#×
+B™š@333B>  À  À  ?°£×  >¨õÃ?W
+=A†\@uÂAffA¸NGC6642             18:31:54.10-23:28:30.7AõÃÀÎ{A™š?Ù™šA   ?³33¿fff¿¡G® >ÌÌÍAƒ33A|£×A{ÀÕ¸?ë…?{?8Qì?¹™šF8  <õÂÂdÌÍ@¬ÌÍÂ=33À  À  ?ş¸Rc:=ÌÌÍ?:áHA†\@”zá@ŞffAQìNGC6652             18:35:45.63-32:59:26.6?Ã×
+Á6{A   @,ÌÍAÌÍ>™™šÀ   ¿O\) =¸QìA\)AtzáA	ë…ÀÕ¸>½p¤?p£×?¸?Š=qG3  >LÌÍÂßff@¹™šÂĞ™šÀ  À  ?æff  =ÌÌÍ>õÂA€ÌÍ@\)@á™šA=qNGC6656  M22        18:36:23.94-23:54:17.1A=qÀñ™š@LÌÍ@œÌÍ@LÌÍ?™š¾ÌÌÍ¿Ù™š >®{AbffAY™š@£33Á  >\)?záH?.{?µÂF5  >\)ÃLÍ>LÌÍÃ™š@ù™š>™™š?°£×  ?ª=q@W
+=A‹\)@hQìAzáA®Pal8                18:41:29.9 -19:49:33  AaÂÀÙG®ALÌÍ@°  ADÌÍ@Fff¿À  ¾½p¤ >£×
+AŠ(öA„=qA0QìÀ°Qì?8Qì?œ(öÀ  À      À  Â,  Ap  Â33À  À  ?Ã×
+  ?\)?záA   @ÂA
+ffA…NGC6681  M70        18:43:12.76-32:17:31.6@6ffÁH(öA  @ÌÍAÌÍ>ÌÌÍÀ   ¿Ï\) =\)AxÌÍAo×
+@û×
+Àã×
+=õÂ?8Qì>ğ£×?}p¤F5  <#×
+C\LÍ?fffCcÌÍ@¦ff?   @   c <õÂ?5ÂAd  @º=q@º=qA
+ffGLIMPSE01           18:48:49.7 -01:29:50  Aúzá½ÌÌÍ@†ff@œÌÍ@fff@ÌÍ    À    @›33AæffAá33A±ë…À½¸À  À  À  À      À  À  À  À  À  À  ?¯\)  ?
+=?&ffÀ  À  À  @üzáNGC6712             18:53:04.30-08:42:22.0AÊÌÍÀŠ=q@ÜÌÍ@`  @É™š@@  ¿   ¿‚\ >æffA‚  Ay™šA™šÀğ  ?®?•Â?8Qì?ÈõÃF9  =áG®Â×33?   Â½ff@‰™š>ÌÌÍ?†ff  ?B\?ª=qA•ë…@K…A	™šA33NGC6715  M54        18:55:03.33-30:28:47.5@³…Áap¤AÔ  A—33AÌÌÍ@   ÀĞ  ¿¾¸R >™šA‘G®AŒ£×@ó33Á®>uÂ?Y™š?®?ŒÌÍF7/8=uÂCLÍ>™™šC33A(  >™™š@\  =¸Qì?Që…Alzá@–{A×
+AáHNGC6717  Pal9       18:55:06.04-22:42:05.3AN{Á.ff@ã33@™š@Ù™š?ÌÌÍ¿¦ff¿¡G® >aG®AxÌÍAo
+=AzáÀµ¸>³33?€  ?&ff?¯\)F6  <#×
+A¶ff@Y™šBÌÍÀ  À  @zá  =£×
+?.{A†(ö@’\@Ğ£×A…NGC6723             18:59:33.15-36:37:56.1=\)ÁŠffA33@&ffAÌÍ    À&ff¿ŒÌÍ =LÌÍAw®Amp¤@àQìÀú\>W
+=?@  ?   ?†ffF9      Â½  @fffÂ°™šÀ  À  ?{c:?Tzá?Ã×
+A‘
+=@2\A£×A×
+NGC6749             19:05:15.3 +01:54:03  BÌÍÀp¤@üÌÍ@   @ÌÌÍ@–ff¾™™š¿ÌÌÍ ?À  A™šA™¸AG
+=ÀÖff?LÌÍ@õÃÀ  À      À  ÂvÌÍ@9™šÂ<ÌÍÀ  À  ?J=q  ?¸R?ŒÌÍA¯
+=@S33A	p¤AzáNGC6752             19:10:52.11-59:59:04.4C¨>¸ÁÍ
+=@€  @¦ff@S33¿³33¿Ù™š¿Å¸ =#×
+A[33AR{@¬ÌÍÀ÷\)=\)?(õÃ>Ü(ö?n{F4/5=#×
+ÁÕ™š>LÌÍÁÚff@œÌÍ>ÌÌÍ@   c >.{?ôzáAn{@¡G®@Ü(öAë…NGC6760             19:11:12.01+01:01:49.7Bp¤ÀzáH@ìÌÍ@™™š@¼ÌÍ@‰™š¿   ¾ÌÌÍ ?E¸A‹®A…ÂA{ÀúáH?‹…?Ôzá?G®@®G5  =#×
+ÁÜ  @É™šÁS33À  À  ?Ó33  >®{?¢\A•G®@xõÃ@ş¸RA(öNGC6779  M56        19:16:35.57+30:11:00.5Bz£×Ap¤AffA33@‰™šAÌÍ?³33¿ıp¤ >…¸Ap¤AzáHAQìÀí¸>™š?\(öÀ  ?”záF5  <õÂÃ™š?fffÂî33@€  ?™š?°£×  >áG®?ŒÌÍA£×@Që…AG®A(öTerzan7             19:17:43.92-34:39:27.8@XõÃÁ \A¶ffAy™šA«33?¦ffÀù™š¾£×
+ =\)A{Aˆ{A@  À QìÀ  À  À  À      À  C&  @€  C,€ À  À  ?n{  >úáH?E¸A¥G®?Ğ£×A=qA\)Pal10               19:18:02.1 +18:34:18  BQ¸R@.{@¼ÌÍ@ÌÌÍ@fff@–ff>™™š½ÌÌÍ ?ÔzáAffA˜{AS…À¹G®À  À  À  À      À  Áı™š>ÌÌÍÁy™šÀ  À  ?zá  ?O\)?}p¤A°=q@`£×A
+=Aë…Arp2                19:28:44.11-30:21:20.3AÌÍÁ¦QìAäÌÍA«33AÓ33@€  Á#33¿à   =ÌÌÍA‘
+=AŒ¸RADÌÍÀ©G®À  ?\(öÀ  À      À  Bæ  A   BôÌÍÀ  À  ?aG®  ?˜Qì?â\AÂ{¾€  A=qA33NGC6809  M55        19:39:59.71-30:57:53.1A£×Áº(ö@¬ÌÍ@y™š@œÌÍ?LÌÍÀff¿øQì =£×
+AfffA^=q@Ê=qÀò=q=áG®?8Qì>õÂ?€  F4  <£×
+C.³3>™™šC5ÌÍ@€  >™™š?n{  ?æff@5¸AšáH@{AffA£×Terzan8             19:41:44.41-33:59:58.1@¸QìÁÄzáAÒffA›33A¾ff@™šÁ.ffÀ
+=q =õÂA™šA‹ÂAFffÀ¢=qÀ  À  À  À      À  C  A   C33À  À  ?™š  ?€  ?s33A¶\?®A\)A\)Pal11               19:45:14.4 -08:00:26  AşzáÁy¸AVffA33A0  @Ù™šÀfff¾ÌÌÍ >³33A‹®A…ÂAÌÍÀİp¤À  ?¢\À  À      À  Âˆ  A   Â`  À  À  ?ë…  ?˜Qì?ºáHAÂ@\AÂAp¤NGC6838  M71        19:53:46.49+18:46:45.1Bc  À‘ë…@€  @Öff@ÌÍ@Y™š¾™™š¿G® >€  Ag®A\ÌÍA
+=À³…?!G®?‹…?!G®?®{G1      Á¶ff>LÌÍÀğ  @33>LÌÍ?“33  ?!G®?ÕÂA  @5¸@ñG®AáHNGC6864  M75        20:06:04.69-21:55:16.2A¢ffÁÎ  A§33Ak33AŒÌÍ@Ğ  Á™š¿¥¸ >#×
+A™šAˆ¸RAQìÁ	¸>\)?^¸R?ÌÍ?”záF9  =\)Ã=LÍ@fffÃ4ÌÍA$ÌÍ?À  ?æff  =¸Qì>ë…AxQì@Qì@üzáAffNGC6934             20:34:11.37+07:24:16.1BPffÁ—¸Ay™šALÌÍA™šA;33À£33¿¼(ö =ÌÌÍA†áHA‚=qAG®Àîff>LÌÍ?E¸>úáH?}p¤F7/8<#×
+ÃÍ³3?ÌÌÍÃÇ@ @£33?ŒÌÍ?Ã×
+  >aG®?0£×AŠÌÍ@\(öA33A£×NGC6981  M72        20:53:27.70-12:32:14.3B£×Â¸RAˆ  ANffA;33AÌÍÁ33¿µÂ =LÌÍA‡33A‚záAQìÀáG®>\)?8Qì>æff?p£×F7  <£×
+Ã¬€ @lÌÍÃ¨šÀ  À  ?šáH  >ë…?n{A˜(ö@QìA…A®NGC7006             21:01:29.38+16:11:14.4B{Á›G®B$ÌÍB  A‰™šB33Á[33¿Â\ =LÌÍA–ffA‘×
+A(õÃÀõp¤=uÂ?@  À  ?záHF6  <#×
+ÃÀÍ>ÌÌÍÃ¹¦fÀ  À  ?´zá  >.{>áG®A”õÃ@%¸A
+\A¸RNGC7078  M15        21:29:58.33+12:10:01.2B‚ÁÚzáA&ffA&ff@y™šAÌÍÀ™™šÀ® =ÌÌÍA}G®Av=q@ÆffÁ
+==uÂ?.{À  ?Y™šF3/4=LÌÍÂÖ  >LÌÍÂÀ  AX  ?fff@\c >\)?€  Ac\)@¡™š@úáHA¸NGC7089  M2         21:33:27.02-00:49:23.7BUzáÂ{A8  A&ff@³33@ğ  ÀÖff¿Ó33 =uÂA€ffAx  @Ï
+=Ázá=¸Qì?(õÃ>ë…?k…F4  =áG®À©™š@   @s33A33?™š?Ë…  >£×
+?‡®A|zá@€  A®AffNGC7099  M30        21:40:22.12-23:10:47.5AÙp¤Â;\)A™š@ã33@œÌÍ@   À¼ÌÍÀG® <õÂAq™šAj=q@æ{Àîff<õÂ?™š>Ñë…?\(öF3  <#×
+Ã833>LÌÍÃ3™š@°  >ÌÌÍ@   c =uÂ?ƒ×
+Au™š@ Qì@Ë×
+A{Pal12               21:46:38.84-21:15:09.4Aô{Â>¸RA˜  A|ÌÍA0  @Ğ  Áa™š¿Y™š <£×
+A‰
+=Aƒ®A?×
+À
+=>®{?ˆõÃÀ  À      À  AŞff?À  B  À  À  @>¸R  <£×
+?Ü(öA™®@hõÃ@§
+=AzáPal13               23:06:44.44+12:46:19.2B®33Â*ÌÍAĞ  A×33?€  A˜ÌÍÁŒÌÍ¿ğ£× =LÌÍA  A‰×
+AW…Àp£×½áG®?B\À  À      À  AÉ™š>™™šA÷33?fff>™™š?(õÃ  >õÂ>¸QìAÂzá>#×
+AÂA™šNGC7492             23:08:26.63-15:36:41.4BU\Â}ë…AÒffAÊff@à  AffÁ¼  ¿ã×
+     A
+=AˆÌÍA4£×À¹ë…>k…>×
+=À  À      >uÂÃ1€ ?™šÃ033?™™š?€  ?8Qì  ?\(ö?“33A¥p¤?¢\A™šA
+=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
